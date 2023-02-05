@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.smkn9.semarang.sip_smk9.activities.TokenActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="Verifikasi Token"
+        android:textSize="@dimen/_25sdp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:text="Masukan 4 digit Token \n yang didapat  dari proktor USBA" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.chaos.view.PinView
+            android:id="@+id/pv_validasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:padding="@dimen/_5sdp"
+
+            android:textSize="@dimen/_18sdp"
+            app:borderWidth="@dimen/_2sdp"
+            app:itemCount="4"
+            app:itemSize="@dimen/_48sdp"
+            app:itemSpacing="@dimen/_4sdp"
+            app:itemRadius="@dimen/_4sdp"
+            style="@style/PinWidget.PinView" />
+
+    </LinearLayout>
+    <Button
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:text="validasi"
+        android:onClick="cekToken"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+</LinearLayout>

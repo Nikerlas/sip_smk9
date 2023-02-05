@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/parent_input_hadir_pulang"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.presensi.InputPresensiKehadiranSiswaActivity">
+
+
+    <LinearLayout
+        android:id="@+id/text_view_qr_code_value"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
+        <ImageView
+            android:id="@+id/iv_logo_sekolah_input_presensi"
+            android:src="@drawable/logo_sekolah"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_200sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_presensi_foto_guru"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_200sdp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="NIS"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_nis_presensi"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Presensi"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_mode_presensi"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Lokasi"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text=":"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/tv_lokasi_instansi"
+                android:text="Posisi kordinat lokasi belum didapatkan"
+                android:textColor="#F44336"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_kirim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:text="Kirim"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <Button
+            android:id="@+id/btn_lokasi"
+            android:visibility="gone"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:text="Get Lokasi"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            />
+
+        <Button
+            android:id="@+id/btn_ambil_foto"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:text="Ambil Foto"
+            android:textColor="#fff"
+            android:background="@color/colorPrimaryDark"
+            />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

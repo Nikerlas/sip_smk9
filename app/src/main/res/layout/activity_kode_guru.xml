@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:id="@+id/parent_login_soal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.KodeGuruActivity">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <ImageView
+        android:src="@drawable/logo_sekolah"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/nis"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/samadengan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_nis_cek_kode_guru"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/kelas"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/samadengan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/sp_kelas"
+            android:entries="@array/tingkatanKelas"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="@string/kode_guru"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/samadengan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_kode_guru"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_kirim"
+        android:onClick="kirimKodeGuru"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:text="@string/kirim"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_lanjut"
+        android:visibility="gone"
+        android:onClick="lanjutMengerjakan"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:text="@string/lanjut"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_lanjut_essay"
+        android:visibility="gone"
+        android:onClick="lanjutMengerjakanEssay"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:text="@string/lanjut"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+</ScrollView>

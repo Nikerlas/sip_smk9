@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/iv_item_question_essay"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp" />
+
+            <ProgressBar
+                android:id="@+id/pb_soal_essay"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_item_question_essay"
+            android:textSize="@dimen/_18sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:text="Soal yang akan diujikan kepada siswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/et_jawaban_essay"
+            android:textSize="@dimen/_18sdp"
+            android:hint="Ketikan Jawaban Anda di sini"
+            android:gravity="center"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_margin="@dimen/_8sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"/>
+
+        <Button
+            android:id="@+id/btn_simpan_adapter_essay"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:background="@color/colorPrimary"
+            android:text="@string/simpan"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smkn9.semarang.sip_smk9">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_sekolah"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+        <activity android:name="com.smkn9.semarang.sip_smk9.CobaActivity"></activity>
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.kirimpresensiwajah.KirimPresensiWajahActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.essay.EssayResultActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.essay.InfoSoalEssayActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.essay.MenuEssayActivity"
+            android:label="@string/title_activity_menu_essay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.gantipass.GantiPassActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.pinjamanperpus.PinjamanPerpusActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.presensimapel.HomePresensiMapelSiswaActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.raport.ValidasiNisRaportActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.pengumumankelulusan.ValidasiNisKelulusanActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.tefa.TefaActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.presensi.InputPresensiKehadiranSiswaActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.presensi.HomePresensiKehadiranSiswaActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.registerdevice.RegisterDeviceActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.tagihan.AdministrasiActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.DaftarNilaiActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.DetailInfoActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.DetailPresensiActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.home.HomeActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.loginsim.LoginSimActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- <category android:name="android.intent.category.HOME" /> -->
+                <!-- <category android:name="android.intent.category.DEFAULT" /> -->
+                <!-- <category android:name="android.intent.category.MONKEY"/> -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.MenuActivity"
+            android:exported="true"
+            android:label="@string/title_activity_menu"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.LoginActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.TokenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.ResultActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.KodeGuruActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.homepresensiwajah.HomePresensiWajahActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.registerwajah.RegisterActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.smkn9.semarang.sip_smk9.activities.rekappresensi.RekapPresensiGuKarActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

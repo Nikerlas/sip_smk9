@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.essay.InfoSoalEssayActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/iv_icon_sekolah_essay"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:src="@drawable/logo_sekolah"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_nama_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_icon_sekolah_essay"
+            android:layout_centerHorizontal="true"
+            android:text="@string/nama_sekolah"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_nis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_nama_app"
+            android:layout_marginTop="@dimen/_40sdp">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="@string/nis" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/samadengan" />
+
+            <TextView
+                android:id="@+id/tv_nis_info_essay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_nis">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="@string/nama" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/samadengan" />
+
+            <TextView
+                android:id="@+id/tv_nama_info_essay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_mapel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_nama">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Mapel Uji" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/samadengan" />
+
+            <TextView
+                android:id="@+id/tv_mapel_uji_essay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jml_soal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_mapel">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Jumlah Soal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/samadengan" />
+
+            <TextView
+                android:id="@+id/tv_jml_soal_uji_essay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_durasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_jml_soal">
+
+            <TextView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_20sdp"
+                android:text="Durasi" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/samadengan" />
+
+            <TextView
+                android:id="@+id/tv_durasi_ujian_essay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_4sdp" />
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/linearLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/ll_durasi">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="@dimen/_100sdp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:paddingLeft="@dimen/_20sdp"-->
+<!--                android:text="@string/password" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/samadengan" />-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/et_pass"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="@string/masukin_password_di_sini"-->
+<!--                android:inputType="textPassword" />-->
+<!--        </LinearLayout>-->
+
+        <Button
+            android:id="@+id/btn_kerjakan_essay"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_durasi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_48sdp"
+            android:background="@color/colorPrimary"
+            android:onClick="kerjakanEssay"
+            android:text="Kerjakan"
+            android:textColor="#fdfdfd" />
+    </RelativeLayout>
+
+</ScrollView>

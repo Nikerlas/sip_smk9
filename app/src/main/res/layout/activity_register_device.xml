@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/parent_register"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.smkn9.semarang.sip_smk9.activities.registerdevice.RegisterDeviceActivity">
+
+    <ImageView
+        android:src="@drawable/logo_sekolah"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp" />
+
+
+
+    <TextView
+        android:text="@string/nama_sekolah"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nis" />
+
+    <TextView
+        android:id="@+id/tv_nis_register"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:text="Android ID" />
+
+    <TextView
+        android:id="@+id/tv_android_id_register"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:id="@+id/btn_register_device"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="Daftarkan Device"
+        android:textColor="#ffff"
+        android:background="@color/colorPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

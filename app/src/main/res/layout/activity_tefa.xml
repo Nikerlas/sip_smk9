@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_tefa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.tefa.TefaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_service_motor_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Service Motor" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_service_motor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E7F1DB"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_nis_service_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="@string/nis" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <TextView
+                        android:id="@+id/tv_nis_service_motor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_nama_service_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="@string/nama" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <TextView
+                        android:id="@+id/tv_nama_service_motor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_noHp_service_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="HP" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <EditText
+                        android:id="@+id/et_hp_service_motor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:hint="Masukan no Hp Anda"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_alamat_service_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_nama_app">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Alamat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_alamat_service_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:hint="Masukan alamat lengkap Anda" />
+
+                <LinearLayout
+                    android:id="@+id/ll_catatan_service_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Catatan Untuk Mekanik" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_catatan_service_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:hint="Masukan catatan untuk mekanik kami" />
+
+                <Button
+                    android:id="@+id/btn_pesan_service_motor"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@color/colorPrimary"
+                    android:text="Kirim"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_service_mobil_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Service Mobil" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_service_mobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E7F1DB"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_nis_service_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="@string/nis" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <TextView
+                        android:id="@+id/tv_nis_service_mobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_nama_service_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="@string/nama" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <TextView
+                        android:id="@+id/tv_nama_service_mobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_noHp_service_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="HP" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <EditText
+                        android:id="@+id/et_hp_service_mobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:hint="Masukan no Hp Anda"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_alamat_service_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Alamat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_alamat_service_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:hint="Masukan alamat lengkap Anda" />
+
+                <LinearLayout
+                    android:id="@+id/ll_catatan_service_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Catatan Untuk Mekanik" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_catatan_service_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:hint="Masukan catatan untuk mekanik kami" />
+
+                <Button
+                    android:id="@+id/btn_pesan_service_mobil"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@color/colorPrimary"
+                    android:text="Kirim"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_mencari_motor_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Jasa Mencari Motor" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_mencari_motor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E7F1DB"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_nis_mencari_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="@string/nis" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <TextView
+                        android:id="@+id/tv_nis_mencari_motor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_nama_mencari_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="@string/nama" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <TextView
+                        android:id="@+id/tv_nama_mencari_motor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_noHp_mencari_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="HP" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <EditText
+                        android:id="@+id/et_hp_mencari_motor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:hint="Masukan no Hp Anda"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dana_mencari_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Dana" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <EditText
+                        android:id="@+id/et_dana_mencari_motor"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="Juta" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_alamat_mencari_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Alamat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_alamat_mencari_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:hint="Masukan alamat lengkap Anda" />
+
+                <LinearLayout
+                    android:id="@+id/ll_catatan_mencari_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Catatan Untuk Mekanik" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_catatan_mencari_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:hint="Catatan untuk spesifikasi motor yang dicari" />
+
+                <Button
+                    android:id="@+id/btn_pesan_mencari_motor"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@color/colorPrimary"
+                    android:text="Kirim"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_mencari_mobil_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Jasa Mencarikan Mobil" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_mencari_mobil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_2sdp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E7F1DB"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_nis_mencari_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="@string/nis" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <TextView
+                        android:id="@+id/tv_nis_mencari_mobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_nama_mencari_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="@string/nama" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <TextView
+                        android:id="@+id/tv_nama_mencari_mobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_noHp_mencari_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="HP" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <EditText
+                        android:id="@+id/et_hp_mencari_mobil"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:hint="Masukan no Hp Anda"
+                        android:inputType="number" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_dana_mencari_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Dana" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+
+                    <EditText
+                        android:id="@+id/et_dana_mencari_mobil"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:inputType="number" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="Juta" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_alamat_mencari_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Alamat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/samadengan" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_alamat_mencari_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:hint="Masukan alamat lengkap Anda" />
+
+                <LinearLayout
+                    android:id="@+id/ll_catatan_mencari_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/_20sdp"
+                        android:text="Catatan Untuk Mekanik" />
+
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/et_catatan_mencari_mobil"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:gravity="center"
+                    android:hint="Catatan untuk spesifikasi motor yang dicari" />
+
+                <Button
+                    android:id="@+id/btn_pesan_mencari_mobil"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:background="@color/colorPrimary"
+                    android:text="Kirim"
+                    android:textColor="#fff" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

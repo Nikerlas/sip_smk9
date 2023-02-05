@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">SMKN 9 SMG</string>
+    <string name="title_activity_menu">USBA</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="jumlah_jawaban_betul">Jumlah jawaban Betul :</string>
+    <string name="_0">0</string>
+    <string name="waktu">Waktu</string>
+    <string name="nama_sekolah">SMKN 9 Semarang</string>
+    <string name="kelas">Kelas</string>
+    <string name="samadengan">:</string>
+    <string name="kode_guru">Kode Soal</string>
+    <string name="kirim">Kirim</string>
+    <string name="nilai_anda">Nilai Anda</string>
+    <string name="nis">NIS</string>
+    <string name="masukin_nis_di_sini">masukin NIS di sini</string>
+    <string name="password">Password</string>
+    <string name="masukin_password_di_sini">masukin Password di sini</string>
+    <string name="simpan">Simpan</string>
+    <string name="lanjut">lanjut</string>
+    <string name="refresh">Refresh</string>
+    <string name="nama">Nama</string>
+    <string name="spp_bulan">SPP bulan</string>
+    <string name="status">Status</string>
+    <string name="perihal">Perihal</string>
+    <string name="detail_pengumuman">Detail Pengumuman</string>
+    <string-array name="tingkatanKelas">
+        <item>X</item>
+        <item>XI</item>
+        <item>XII</item>
+    </string-array>
+
+    <string-array name="bulan">
+        <item>JANUARI</item>
+        <item>FEBRUARI</item>
+        <item>MARET</item>
+        <item>APRIL</item>
+        <item>MEI</item>
+        <item>JUNI</item>
+        <item>JULI</item>
+        <item>AGUSTUS</item>
+        <item>SEPTEMBER</item>
+        <item>OKTOBER</item>
+        <item>NOVEMBER</item>
+        <item>DESEMBER</item>
+    </string-array>
+
+
+    <string-array name="listJam">
+        <item>"1"</item>
+        <item>"2"</item>
+        <item>"3"</item>
+        <item>"4"</item>
+        <item>"5"</item>
+        <item>"6"</item>
+        <item>"7"</item>
+        <item>"8"</item>
+        <item>"9"</item>
+        <item>"10"</item>
+    </string-array>
+    <string name="title_activity_menu_soal">MenuSoalActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_menu_essay">MenuEssayActivity</string>
+
+    <string-array name="lokasi">
+        <item>rumah</item>
+        <item>sekolah</item>
+        <item>magang</item>
+    </string-array>
+</resources>

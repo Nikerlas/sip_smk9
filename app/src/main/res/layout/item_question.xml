@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rl_movie"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp">
+            <com.google.android.youtube.player.YouTubeThumbnailView
+                android:id="@+id/youtube_view"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp">
+            </com.google.android.youtube.player.YouTubeThumbnailView>
+            <ImageView
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_action_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="250dp">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/iv_item_question"-->
+                <!--android:src="@mipmap/ic_launcher"-->
+                <!--android:visibility="gone"-->
+                <!--android:layout_marginBottom="10dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="250dp" />-->
+        <!--</FrameLayout>-->
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.github.chrisbanes.photoview.PhotoView
+                android:id="@+id/iv_item_question"
+                android:src="@mipmap/ic_launcher"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp" />
+            <ProgressBar
+                android:id="@+id/pb_soal"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/tv_item_question"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_20sdp"
+            android:text="Soal yang akan diujikan kepada siswa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioGroup
+            android:id="@+id/rg_item_question"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/rb_a"
+                android:text="A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_rb_a"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp" />
+                <ProgressBar
+                    android:id="@+id/pb_rb_a"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:id="@+id/rb_b"
+                android:text="B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_rb_b"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp" />
+                <ProgressBar
+                    android:id="@+id/pb_rb_b"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:id="@+id/rb_c"
+                android:text="C"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_rb_c"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp" />
+                <ProgressBar
+                    android:id="@+id/pb_rb_c"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:id="@+id/rb_d"
+                android:text="D"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_rb_d"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp" />
+                <ProgressBar
+                    android:id="@+id/pb_rb_d"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RadioButton
+                android:id="@+id/rb_e"
+                android:text="E"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/iv_rb_e"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150sdp" />
+                <ProgressBar
+                    android:id="@+id/pb_rb_e"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <!--<RadioButton-->
+            <!--android:id="@+id/rb_n"-->
+            <!--android:checked="true"-->
+            <!--android:visibility="invisible"-->
+            <!--android:text="none"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_simpan_adapter"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:background="@color/colorPrimary"
+            android:text="@string/simpan"
+            android:textColor="#ffff" />
+    </LinearLayout>
+
+
+</ScrollView>
