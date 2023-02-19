@@ -5,104 +5,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:background="#FFFFFF"
     tools:context=".activities.loginsim.LoginSimActivity">
 
     <LinearLayout
         android:orientation="vertical"
+        android:gravity="center"
         android:focusableInTouchMode="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <ImageView
             android:layout_width="@dimen/_300sdp"
-            android:layout_height="@dimen/_200sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:layout_gravity="center"
             android:src="@drawable/logo_sekolah" />
 
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center_horizontal"-->
-<!--            android:layout_marginTop="@dimen/_10sdp"-->
-<!--            android:gravity="center"-->
-<!--            android:text="@string/nama_sekolah"-->
-<!--            android:textColor="#000000"-->
-<!--            android:textSize="@dimen/_20sdp"-->
-<!--            android:textStyle="bold" />-->
+        <!--        <TextView-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginTop="@dimen/_10sdp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:text="@string/nama_sekolah"-->
+        <!--            android:textColor="#000000"-->
+        <!--            android:textSize="@dimen/_20sdp"-->
+        <!--            android:textStyle="bold" />-->
 
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_30sdp">
-
-            <TextView
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="wrap_content"
-                android:text="@string/nis" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/samadengan" />
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:gravity="center">
 
             <EditText
+                android:background="@drawable/edit_text"
                 android:id="@+id/et_nis_login"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Masukan nis Anda"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="Masukan Nis"
                 android:inputType="number"
                 android:paddingLeft="@dimen/_4sdp" />
 
-
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_2sdp">
-
-            <TextView
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="wrap_content"
-                android:text="@string/password" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/samadengan" />
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center">
 
             <EditText
+                android:background="@drawable/edit_text"
                 android:id="@+id/et_pass_login"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Password"
-                android:inputType="textPassword"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="Masukan Password"
+                android:inputType="numberPassword"
                 android:paddingLeft="@dimen/_4sdp" />
-
 
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="@dimen/_250sdp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_2sdp">
-
-            <TextView
-                android:layout_width="@dimen/_100sdp"
-                android:layout_height="wrap_content"
-                android:text="@string/kelas" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/samadengan" />
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="center">
 
             <Spinner
+                android:background="@drawable/spinner"
                 android:id="@+id/sp_tingkatan"
                 android:layout_width="@dimen/_100sdp"
                 android:layout_height="wrap_content"
@@ -121,13 +100,13 @@
             android:text="Login"
             android:textColor="#ffff" />
 
-<!--        <TextView-->
-<!--            android:text="Versi 1.1"-->
-<!--            android:textSize="@dimen/_20sdp"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_marginTop="@dimen/_25sdp"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"/>-->
+        <!--        <TextView-->
+        <!--            android:text="Versi 1.1"-->
+        <!--            android:textSize="@dimen/_20sdp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:layout_marginTop="@dimen/_25sdp"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"/>-->
     </LinearLayout>
 
 
