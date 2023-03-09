@@ -83,6 +83,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name="com.smkn9.semarang.sip_smk9.activities.loginsim.LoginSimActivity"
+            android:windowSoftInputMode="adjustPan|stateVisible"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

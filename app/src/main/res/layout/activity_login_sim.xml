@@ -6,40 +6,51 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="#FFFFFF"
+    android:background="@drawable/bg_login_lagi"
     tools:context=".activities.loginsim.LoginSimActivity">
 
     <LinearLayout
         android:orientation="vertical"
         android:gravity="center"
         android:focusableInTouchMode="true"
+        android:layout_marginTop="@dimen/_190sdp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="@dimen/_300sdp"
-            android:layout_height="@dimen/_150sdp"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_gravity="center"
-            android:src="@drawable/logo_sekolah" />
+<!--        <ImageView-->
+<!--            android:layout_width="@dimen/_300sdp"-->
+<!--            android:layout_height="@dimen/_150sdp"-->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:src="@drawable/logo_sekolah" />-->
 
-        <!--        <TextView-->
-        <!--            android:layout_width="wrap_content"-->
-        <!--            android:layout_height="wrap_content"-->
-        <!--            android:layout_gravity="center_horizontal"-->
-        <!--            android:layout_marginTop="@dimen/_10sdp"-->
-        <!--            android:gravity="center"-->
-        <!--            android:text="@string/nama_sekolah"-->
-        <!--            android:textColor="#000000"-->
-        <!--            android:textSize="@dimen/_20sdp"-->
-        <!--            android:textStyle="bold" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center_horizontal"-->
+<!--                    android:layout_marginTop="@dimen/_40sdp"-->
+<!--                    android:gravity="center"-->
+<!--                    android:text="LOGIN"-->
+<!--                    android:textColor="#fff"-->
+<!--                    android:fontFamily="@font/futura"-->
+<!--                    android:textSize="@dimen/_30sdp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:gravity="center"-->
+<!--            android:text="sip smkn 9"-->
+<!--            android:textColor="#4F4F4F"-->
+<!--            android:textSize="@dimen/_25sdp" />-->
 
 
         <LinearLayout
             android:layout_width="@dimen/_250sdp"
             android:layout_height="@dimen/_40sdp"
             android:orientation="vertical"
-            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_80sdp"
             android:gravity="center">
 
             <EditText
@@ -48,8 +59,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:textSize="@dimen/_15sdp"
                 android:hint="Masukan Nis"
+                android:textColor="@color/black"
                 android:inputType="number"
+                android:textStyle="bold"
                 android:paddingLeft="@dimen/_4sdp" />
 
         </LinearLayout>
@@ -67,7 +81,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
+                android:textSize="@dimen/_15sdp"
                 android:hint="Masukan Password"
+                android:textStyle="bold"
+                android:textColor="@color/black"
                 android:inputType="numberPassword"
                 android:paddingLeft="@dimen/_4sdp" />
 
@@ -84,20 +101,21 @@
                 android:background="@drawable/spinner"
                 android:id="@+id/sp_tingkatan"
                 android:layout_width="@dimen/_100sdp"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_30sdp"
                 android:entries="@array/tingkatanKelas" />
-
 
         </LinearLayout>
 
         <Button
             android:id="@+id/btn_login"
-            android:layout_width="wrap_content"
+            android:layout_width="@dimen/_100sdp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/_50sdp"
-            android:background="@color/colorPrimary"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/login"
             android:text="Login"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/futura"
             android:textColor="#ffff" />
 
         <!--        <TextView-->

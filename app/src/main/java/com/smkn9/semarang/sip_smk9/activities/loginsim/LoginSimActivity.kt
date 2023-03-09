@@ -51,6 +51,8 @@ class LoginSimActivity : AppCompatActivity() {
         etPass = et_pass_login
         spTingkatan = sp_tingkatan
 
+        getSupportActionBar()?.hide()
+
         val isLogin = getSharedPreferences(Constant.MASTER_SISWA_HEADER, Context.MODE_PRIVATE).getBoolean(Constant.SISWA_LOGIN,false)
 
         if(isLogin){
